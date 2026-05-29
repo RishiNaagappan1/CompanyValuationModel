@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f6f3;
+    color: #111827;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background: #f2f1ed;
+    border-right: 1px solid #d1d5db;
+    position: fixed;
+}
+
+.logo {
+    padding: 30px;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.logo h1 {
+    font-size: 48px;
+    margin: 0;
+    font-family: serif;
+}
+
+.logo p {
+    letter-spacing: 5px;
+    color: #6b7280;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111827;
+    padding: 20px 30px;
+    font-size: 22px;
+}
+
+.nav-links a:hover {
+    background-color: #e7e5df;
+}
+
+.main-content {
+    margin-left: 300px;
+    padding: 40px;
+    width: 100%;
+}
+
+.page-title {
+    font-size: 80px;
+    font-family: serif;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 32px;
+    color: #4b5563;
+    margin-top: 10px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #d1d5db;
+    padding: 30px;
+}
+
+.card-label {
+    letter-spacing: 5px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.card-value {
+    font-size: 64px;
+    margin-top: 20px;
+}
+
+.form-card {
+    background: white;
+    border: 1px solid #d1d5db;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    margin-top: 15px;
+    border: 1px solid #d1d5db;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #7d9077;
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #687864;
+}
