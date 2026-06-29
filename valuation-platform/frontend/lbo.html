@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LBO Model</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h1>Valuation</h1>
+            <p>PROFESSIONAL SUITE</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="dcf.html">DCF Model</a>
+            <a href="comparables.html">Comparables</a>
+            <a href="lbo.html">LBO Model</a>
+            <a href="reports.html">Reports</a>
+        </div>
+
+    </div>
+
+    <div class="main-content">
+
+        <h1 class="page-title">LBO Analysis</h1>
+
+        <div class="form-card">
+
+            <h2>Company Search</h2>
+
+            <input
+                id="lboTicker"
+                placeholder="Ticker (AAPL)"
+            >
+
+            <button onclick="loadLBOData()">
+                Load Company
+            </button>
+
+        </div>
+
+        <div class="form-card">
+
+            <h2>LBO Assumptions</h2>
+
+            <input
+                id="purchaseMultiple"
+                placeholder="Purchase Multiple (12)"
+                value="12"
+            >
+
+            <input
+                id="debtPercent"
+                placeholder="Debt % (60)"
+                value="60"
+            >
+
+            <input
+                id="exitMultiple"
+                placeholder="Exit Multiple (13)"
+                value="13"
+            >
+
+            <input
+                id="holdingPeriod"
+                placeholder="Holding Period (5)"
+                value="5"
+            >
+
+            <button onclick="calculateLBO()">
+                Calculate LBO
+            </button>
+
+        </div>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <div class="card-label">
+                    ENTERPRISE VALUE
+                </div>
+                <div id="enterpriseValue" class="card-value">
+                    $0
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label">
+                    DEBT FINANCING
+                </div>
+                <div id="debtValue" class="card-value">
+                    $0
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label">
+                    EQUITY CONTRIBUTION
+                </div>
+                <div id="equityContribution" class="card-value">
+                    $0
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label">
+                    EXIT VALUE
+                </div>
+                <div id="exitValue" class="card-value">
+                    $0
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label">
+                    MOIC
+                </div>
+                <div id="moic" class="card-value">
+                    0x
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label">
+                    IRR
+                </div>
+                <div id="irr" class="card-value">
+                    0%
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/lbo.js"></script>
+
+</body>
+</html>

@@ -122,3 +122,223 @@ button {
 button:hover {
     background-color: #687864;
 }
+
+#sensitivityTable {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+#sensitivityTable th,
+#sensitivityTable td {
+
+    border: 1px solid #333;
+
+    padding: 12px;
+
+    text-align: center;
+
+}
+
+#sensitivityTable th {
+
+    background: #1f2937;
+
+    color: white;
+
+}
+
+#sensitivityTable td {
+
+    background: #f8fafc;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+th {
+
+    background: #111827;
+
+    color: white;
+
+    padding: 12px;
+
+}
+
+td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+tr:hover {
+
+    background: #f5f5f5;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+th {
+
+    background: #111827;
+
+    color: white;
+
+    padding: 12px;
+
+}
+
+td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+tr:hover {
+
+    background: #f5f5f5;
+
+}
+#reportOutput {
+
+    margin-top: 25px;
+
+}
+
+#reportOutput .form-card {
+
+    margin-bottom: 20px;
+
+}
+
+#reportOutput h2 {
+
+    margin-bottom: 15px;
+
+}
+
+#reportOutput table {
+
+    border-collapse: collapse;
+
+}
+
+#reportOutput td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #2f3542;
+
+}
+#footballField {
+
+    margin-top: 20px;
+
+}
+
+.valuation-row {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+.valuation-label {
+
+    width: 220px;
+
+    font-weight: bold;
+
+}
+
+.valuation-bar {
+
+    position: relative;
+
+    height: 24px;
+
+    background: #7d9077;
+
+    border-radius: 6px;
+
+}
+
+.valuation-values {
+
+    margin-left: 15px;
+
+    color: #4b5563;
+
+}
+#footballField {
+
+    margin-top: 25px;
+
+}
+
+.valuation-row {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+.valuation-label {
+
+    width: 180px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+}
+
+.valuation-bar {
+
+    height: 24px;
+
+    background: #7d9077;
+
+    border-radius: 6px;
+
+}
+
+.valuation-values {
+
+    margin-left: 20px;
+
+    font-weight: bold;
+
+}

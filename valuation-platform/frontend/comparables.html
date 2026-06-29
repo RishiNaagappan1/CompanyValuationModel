@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Comparable Companies</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h1>Valuation</h1>
+
+            <p>PROFESSIONAL SUITE</p>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Dashboard</a>
+
+            <a href="dcf.html">DCF Model</a>
+
+            <a href="comparables.html">Comparables</a>
+
+            <a href="lbo.html">LBO Model</a>
+
+            <a href="reports.html">Reports</a>
+
+        </div>
+
+    </div>
+
+    <div class="main-content">
+
+        <h1 class="page-title">
+            Comparable Companies Analysis
+        </h1>
+
+        <div class="form-card">
+
+            <h2>Company Search</h2>
+
+            <input
+                id="compTicker"
+                placeholder="AAPL"
+            >
+
+            <button onclick="loadComparables()">
+                Analyze
+            </button>
+
+        </div>
+
+        <div class="form-card">
+
+            <h2>Valuation Multiples</h2>
+
+            <table id="compsTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Ticker</th>
+
+                        <th>Company</th>
+
+                        <th>Market Cap</th>
+
+                        <th>Revenue</th>
+
+                        <th>EBITDA</th>
+
+                        <th>EV / Revenue</th>
+
+                        <th>EV / EBITDA</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+        <div class="form-card">
+
+            <h2>
+                Comparable Valuation
+            </h2>
+
+            <p id="impliedPrice">
+                Implied Price: $0
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/comparables.js"></script>
+
+</body>
+
+</html>
