@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Reports</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h1>Valuation</h1>
+
+            <p>PROFESSIONAL SUITE</p>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="dcf.html">
+                DCF Model
+            </a>
+
+            <a href="comparables.html">
+                Comparables
+            </a>
+
+            <a href="lbo.html">
+                LBO Model
+            </a>
+
+            <a href="reports.html">
+                Reports
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="main-content">
+
+        <h1 class="page-title">
+            Reports & Export
+        </h1>
+
+        <p class="subtitle">
+            Generate and download valuation reports
+        </p>
+
+        <div class="form-card">
+
+            <h2>
+                Generate Report
+            </h2>
+
+            <input
+                id="reportTicker"
+                placeholder="Ticker (AAPL)"
+            >
+
+            <button onclick="generateReport()">
+                Generate Report
+            </button>
+
+            <button onclick="downloadPDF()">
+                Export PDF
+            </button>
+
+        </div>
+        <div class="form-card">
+
+            <h2>
+                DCF Sensitivity Analysis
+            </h2>
+
+            <div id="sensitivityTable">
+
+            </div>
+
+        </div>
+
+        <div
+            id="reportHeader"
+            class="form-card"
+            style="display:none;"
+        >
+
+            <h2>
+                Company Report
+            </h2>
+
+            <p>
+                Generated valuation summary and operating metrics.
+            </p>
+
+        </div>
+        <div
+            id="recommendationBox"
+            class="form-card"
+        >
+        </div>
+        <div
+            id="reportOutput"
+        >
+            <div class="form-card">
+
+                <h2>Football Field Valuation</h2>
+
+                <div id="footballField">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="js/reports.js"></script>
+
+</body>
+</html>
